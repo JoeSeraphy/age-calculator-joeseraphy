@@ -1,0 +1,145 @@
+.container {
+  background-color: var(--white);
+  display: grid;
+  align-items: center;
+  padding: 3rem;
+  border: none;
+  border-radius: 1rem;
+  border-bottom-right-radius: 8rem;
+  width: 32rem;
+}
+
+.container .formInputs {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.container .formInputs .labelInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .formInputs .labelInput label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: var(--smokey-grey);
+}
+
+.container .formInputs .labelInput input {
+  width: 6.4rem;
+  padding: 0.8rem 0.5rem;
+  outline: none;
+  font-weight: 400;
+  color: var(--off-black);
+  font-size: 1.5rem;
+  border: 1px solid var(--off-white);
+  border-radius: 0.3rem;
+}
+
+.container .formInputs .labelInput input:focus {
+  border: 1px solid var(--purple);
+}
+
+.container .formInputs .labelInput input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--smokey-grey);
+}
+
+.container .back-btn {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.container .back-btn button {
+  background: transparent;
+  border: none;
+  background-color: var(--purple);
+  border-radius: 6rem;
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.container .back-btn button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.container .containerText {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.container .containerText .ages {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .containerText .ages span {
+  color: var(--purple);
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.container .containerText .ages h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+  color: var(--off-black);
+}
+
+.container .formInputs .labelInput .error.active {
+  color: var(--light-red);
+}
+
+.inputErrorMessage {
+  color: var(--light-red);
+  display: block;
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 68px;
+  font-size: 0.6rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 87.5%;
+  }
+  .container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+  }
+  .container .formInputs {
+    display: flex;
+    justify-content: center;
+  }
+  .container .back-btn {
+    margin-top: 4rem;
+  }
+
+  .container .back-btn button {
+    right: 125px;
+  }
+}
